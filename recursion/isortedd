@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int linear(int arr[],int n,int k)
+{ 
+    if(n==0)
+    
+        return -1
+    }
+if(arr[0]==k)
+{
+ return 0;
+}
+else
+{
+    return linear(arr+1,n-1,k);
+}
+
+
+
+int main()
+{
+    int arr[5]={5,4,3,2,1};
+    bool ans=linear(arr,5,4);
+    return 0;
+}
+
+
+
